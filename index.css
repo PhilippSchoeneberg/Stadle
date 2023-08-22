@@ -1,0 +1,155 @@
+:root{
+    --primaryColor: white;
+    --secondaryColor: black;
+}
+
+.darkMode{
+    --primaryColor: #21272d;
+    --secondaryColor: white;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#top {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    transform: scale(1);
+    text-align: center;
+    z-index: 1;
+    visibility: visible;
+    transition: transform 0.4s;
+}
+
+#logo-name {
+    font-size: 32px;
+    font-weight: bold;
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+}
+
+#map{
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.mainButton{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: none;
+    border-radius: 100px;
+    transition: 150ms ease;
+    user-select: none;
+    visibility: visible;
+    transition: transform 0.4s;
+}
+
+.hide{
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+button:hover{
+    height: 55px;
+    width: 210px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.mainPopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    height: 80%;
+    width: 80%;
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: none;
+    border-radius: 100px;
+    z-index: 5;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.endPopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    height: 40%;
+    width: 20%;
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: none;
+    border-radius: 50px;
+    z-index: 5;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.openPopup{
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    transition: transform 0.4s;
+}
+
+#losGehtsButton{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: none;
+    border-radius: 100px;
+    transition: 150ms ease;
+    user-select: none;
+}
+
+#tippButton{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    background-image:url('resources/figures/tippOriginal.jpg');
+    background-size:cover;
+}
+
+#okButton{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 25px;
+    width: 100px;
+    margin-top: 20px;
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: none;
+    border-radius: 100px;
+    transition: 150ms ease;
+    user-select: none;
+}
