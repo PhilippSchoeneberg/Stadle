@@ -77,10 +77,6 @@ body {
     visibility: hidden;
 }
 
-.blur{
-    filter: blur(5px);
-}
-
 .mainButton:hover{
     transform: translate(-50%, -50%) scale(1.1);
 }
@@ -98,7 +94,6 @@ body {
 }
 
 #historicImg{
-    filter: blur(5px);
     width: clamp(200px, 50%, 600px);  
 }
 

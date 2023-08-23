@@ -29,8 +29,8 @@ const endPopup = document.querySelector(".endPopup");
 const okButton = document.querySelector(".okButton");
 
 var places = [
-                ["Rathaus", "9.4756788", "53.6023594", "false", "Das zwei Etagen hohe Bauwerk misst im Hauptgebäude eine Län-ge von 35 Metern und im Ostflügel eine Länge von 31 Metern . Bis zur Fertigstellung des direkt mit dem ursprünglichen Teil verbunde-nen Neubaus im Jahre 1988 war das in der Schwedenzeit errichtete Gebäude Mittelpunkt der Verwaltung Stades. ", "Jedoch befinden sich heute noch der Ratskeller, das Standesamt, der Ratssaal, eini-ge Büros und der nach dem schwedischen Grafen benannte Kö-nigsmarcksaal, der als Festsaal dient, in dem alten Gebäude. ", "Über dem Haupteingang zur Hökerstraße ist das Wappen von Schwedens König Karl XI abgebildet und erinnert ebenfalls an die Herrschaftszeit in Stade .", "resources/figures/rathaus0.jpg"],
-                ["Zeughaus", "9.4751193", "53.6004986", "false", "Das in den Jahren 1697-1699 errichtete Gebäude diente den Schweden im Krieg gegen die Dänen als Lagerplatz für Waffen und Material. ", "Der Name des Gebäudes steht groß über dem Haupteingang des zweistöckigen Großbaus. Über dem Portal ist das Wappen des schwedischen Königs, zu dieser Zeit Karl XII, abgebildet. ", "Seit dem Umbau zur Markthalle vor rund einhundert Jahren hatte das Gebäude viele Funktionen. So zogen in das Gebäude zeitweise ein Kino sowie eine Jugendherberge und heute eine Eisdiele und eine irische Bar.", "resources/figures/zeughaus0.jpg"]
+                ["Rathaus", "9.4756788", "53.6023594", "false", "/n1. Das zwei Etagen hohe Bauwerk misst im Hauptgebäude eine Länge von 35 Metern und im Ostflügel eine Länge von 31 Metern. Bis zur Fertigstellung des direkt mit dem ursprünglichen Teil verbunde-nen Neubaus im Jahre 1988 war das in der Schwedenzeit errichtete Gebäude Mittelpunkt der Verwaltung Stades. ", "/n2. Jedoch befinden sich heute noch der Ratskeller, das Standesamt, der Ratssaal, einige Büros und der nach dem schwedischen Grafen benannte Königsmarcksaal, der als Festsaal dient, in dem alten Gebäude. ", "/n3. Über dem Haupteingang zur Hökerstraße ist das Wappen von Schwedens König Karl XI abgebildet und erinnert ebenfalls an die Herrschaftszeit in Stade. ", "resources/figures/rathaus0.jpg"],
+                ["Zeughaus", "9.4751193", "53.6004986", "false", "/n1. Das in den Jahren 1697-1699 errichtete Gebäude diente den Schweden im Krieg gegen die Dänen als Lagerplatz für Waffen und Material. ", "/n2. Der Name des Gebäudes steht groß über dem Haupteingang des zweistöckigen Großbaus. Über dem Portal ist das Wappen des schwedischen Königs, zu dieser Zeit Karl XII, abgebildet. ", "/n3. Seit dem Umbau zur Markthalle vor rund einhundert Jahren hatte das Gebäude viele Funktionen. So zogen in das Gebäude zeitweise ein Kino sowie eine Jugendherberge und heute eine Eisdiele und eine irische Bar. ", "resources/figures/zeughaus0.jpg"]
              ]
 
 
@@ -120,15 +120,15 @@ losGehtsButton.addEventListener("click", () => {
 hintButton.addEventListener("click", () => {
     if(hintCounter == 0){
         hintCounter++;
-        document.querySelector("#historicText").innerText = places[todaysPlace][4]
+        document.querySelector("#historicText0").innerText = places[todaysPlace][4]
     }
     else if(hintCounter == 1){
         hintCounter++;
-        document.querySelector("#historicText").innerText = document.querySelector("#historicText").innerText+places[todaysPlace][5];
+        document.querySelector("#historicText1").innerText = places[todaysPlace][5];
     }
     else if(hintCounter == 2){
         hintCounter++;
-        document.querySelector("#historicText").innerText = document.querySelector("#historicText").innerText+places[todaysPlace][6];
+        document.querySelector("#historicText2").innerText = places[todaysPlace][6];
         hintButton.classList.add("hide");
     }
 })
