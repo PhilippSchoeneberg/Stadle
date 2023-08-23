@@ -144,6 +144,7 @@ body {
 .losGehtsButton{
     position: sticky;
     margin-left: 50%;
+    margin-right: 50%;
     transform: translate(-50%, -50%) scale(1);
     height: clamp(50px, 5%, 150px);
     width: clamp(200px, 10%, 600px);
