@@ -97,6 +97,11 @@ body {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
+#historicImg{
+    filter: blur(5px);
+    width: 50%;    
+}
+
 .mainPopup{
     position: absolute;
     top: 50%;
@@ -104,6 +109,7 @@ body {
     transform: translate(-50%, -50%) scale(0.1);
     height: 60%;
     width: 60%;
+    overflow:auto;
     background: var(--secondaryColor);
     color: var(--primaryColor);
     padding: 50px;
@@ -136,8 +142,7 @@ body {
 }
 
 .losGehtsButton{
-    position: absolute;
-    bottom: 5%;
+    position: sticky;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     height: clamp(50px, 5%, 150px);
@@ -148,7 +153,7 @@ body {
     transition: 150ms ease;
 }
 
-.tippButton{
+.hintButton{
     position: absolute;
     top: 10%;
     right: 5%;
