@@ -12,24 +12,26 @@
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
-        <div id="top">
-            <div id="logo-name">Stadle</div>
+        <div class="main">
+            <div id="top">
+                <div id="logo-name">Stadle</div>
+            </div>
+            <div id="map"></div>
+            <button class="mainButton">Spielen</button>
         </div>
-        <div id="map"></div>
-        <button class="mainButton">Spielen</button>
 
         <div class="mainPopup" id="popup">
             <h1>Finde das heutige Stadle!</h1>
             <p id="historicText"></p>
-            <button class="button" id="losGehtsButton">Los gehts!</button>
-            <button class="button" id="tippButton"></button>
+            <button class="losGehtsButton">Los gehts!</button>
+            <button class="tippButton"></button>
         </div>
 
         <div class="endPopup" id="popup">
             <h1>Geschafft!!!</h1>
             <p id="endText"></p>
             <p>Bis Morgen!</p>
-            <button class="button" id="okButton">Ok</button>
+            <button class="okButton">Ok</button>
         </div>
 
         <script src="./index.js"></script>

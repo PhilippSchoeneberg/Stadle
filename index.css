@@ -62,7 +62,7 @@ body {
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: clamp(50px, 5%, 150px)
+    height: clamp(50px, 5%, 150px);
     width: clamp(200px, 10%, 600px);
     background: var(--secondaryColor);
     color: var(--primaryColor);
@@ -77,13 +77,24 @@ body {
     visibility: hidden;
 }
 
-button:hover{
-    height: 6%;
-    width: 11%;
+.blur{
+    filter: blur(50px);
 }
 
-button:focus{
-    outline: none;
+.mainButton:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.losGehtsButton:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.tippButton:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.okButton:hover{
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .mainPopup{
@@ -95,6 +106,7 @@ button:focus{
     width: 80%;
     background: var(--secondaryColor);
     color: var(--primaryColor);
+    padding: 50px;
     border-radius: 100px;
     z-index: 5;
     visibility: hidden;
@@ -110,6 +122,7 @@ button:focus{
     width: 60%;
     background: var(--secondaryColor);
     color: var(--primaryColor);
+    padding: 50px;
     border-radius: 50px;
     z-index: 5;
     visibility: hidden;
@@ -122,12 +135,12 @@ button:focus{
     transition: transform 0.4s;
 }
 
-#losGehtsButton{
+.losGehtsButton{
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: clamp(50px, 5%, 150px)
+    height: clamp(50px, 5%, 150px);
     width: clamp(200px, 10%, 600px);
     background: var(--primaryColor);
     color: var(--secondaryColor);
@@ -135,23 +148,24 @@ button:focus{
     transition: 150ms ease;
 }
 
-#tippButton{
+.tippButton{
     position: absolute;
-    top: 5%;
-    left: 90%;
-    height: clamp(50px, 10%, 150px)
+    top: 10%;
+    right: 5%;
+    transform: translate(-50%, -50%) scale(1);
+    height: clamp(50px, 10%, 150px);
     width: clamp(50px, 5%, 150px);
     border-radius: 100px;
     background-image: url('resources/figures/tippOriginal.jpg');
     background-size: cover;
 }
 
-#okButton{
+.okButton{
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: clamp(25px, 5%, 75%)
+    height: clamp(25px, 5%, 75%);
     width: clamp(100px, 10%, 300px);
     background: var(--primaryColor);
     color: var(--secondaryColor);
