@@ -8,8 +8,6 @@ var options = {units: 'meters'}
 var distance;
 var points;
 
-const main = document.querySelector(".main");
-
 const mainButton = document.querySelector(".mainButton");
 var playButton = true;
 
@@ -89,7 +87,6 @@ function addMarker(lng, lat){
 mainButton.addEventListener("click", () => {
     if(playButton == true){
         playButton = false
-        main.classList.add("blur");
         mainPopup.classList.add("openPopup");
         mainButton.classList.add("hide");
     }
@@ -100,13 +97,11 @@ mainButton.addEventListener("click", () => {
         distance = Math.round(turf.distance([places[todaysPlace][1], places[todaysPlace][2]], [mylng, mylat], options));
         points = Math.round(1/(distance+1)*1000);
         document.querySelector("#endText").innerText = "Du warst " + distance + " Meter vom Ziel entfernt und erhälst " + points + " Punkte.";
-        main.classList.add("blur");
         endPopup.classList.add("openPopup");
     }
 })
 
 losGehtsButton.addEventListener("click", () => {
-    main.classList.remove("blur");
     mainPopup.classList.remove("openPopup");
     mainButton.classList.remove("hide");
     document.querySelector(".mainButton").innerText = "Absenden";
@@ -117,6 +112,5 @@ tippButton.addEventListener("click", () => {
 })
 
 okButton.addEventListener("click", () => {
-    main.classList.remove("blur");
     endPopup.classList.remove("openPopup");
 })
