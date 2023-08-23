@@ -62,8 +62,8 @@ body {
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: 5%;
-    width: 10%;
+    height: clamp(50px, 5%, 150px)
+    width: clamp(200px, 10%, 600px);
     background: var(--secondaryColor);
     color: var(--primaryColor);
     border-radius: 100px;
@@ -127,8 +127,8 @@ button:focus{
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: 5%;
-    width: 10%;
+    height: clamp(50px, 5%, 150px)
+    width: clamp(200px, 10%, 600px);
     background: var(--primaryColor);
     color: var(--secondaryColor);
     border-radius: 100px;
@@ -139,8 +139,8 @@ button:focus{
     position: absolute;
     top: 5%;
     left: 90%;
-    height: 10%;
-    width: 5%;
+    height: clamp(50px, 10%, 150px)
+    width: clamp(50px, 5%, 150px);
     border-radius: 100px;
     background-image: url('resources/figures/tippOriginal.jpg');
     background-size: cover;
@@ -151,8 +151,8 @@ button:focus{
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: 5%;
-    width: 10%;
+    height: clamp(25px, 5%, 75%)
+    width: clamp(100px, 10%, 300px);
     background: var(--primaryColor);
     color: var(--secondaryColor);
     border-radius: 100px;
