@@ -99,7 +99,7 @@ body {
 
 #historicImg{
     filter: blur(5px);
-    width: 50%;    
+    width: clamp(200px, 50%, 600px);  
 }
 
 .mainPopup{
@@ -143,7 +143,7 @@ body {
 
 .losGehtsButton{
     position: sticky;
-    left: 50%;
+    margin-left: 50%;
     transform: translate(-50%, -50%) scale(1);
     height: clamp(50px, 5%, 150px);
     width: clamp(200px, 10%, 600px);
