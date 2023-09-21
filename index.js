@@ -33,7 +33,6 @@ var places = [
                 ["Zeughaus", "9.4751193", "53.6004986", "false", "1. Das in den Jahren 1697-1699 errichtete Gebäude diente den Schweden im Krieg gegen die Dänen als Lagerplatz für Waffen und Material. ", "2. Der Name des Gebäudes steht groß über dem Haupteingang des zweistöckigen Großbaus. Über dem Portal ist das Wappen des schwedischen Königs, zu dieser Zeit Karl XII, abgebildet. ", "3. Seit dem Umbau zur Markthalle vor rund einhundert Jahren hatte das Gebäude viele Funktionen. So zogen in das Gebäude zeitweise ein Kino sowie eine Jugendherberge und heute eine Eisdiele und eine irische Bar. ", "resources/figures/zeughaus0.jpg"],
 		["Schwedenspeicher", "9.4769296", "53.6039719", "false", "1. Nachdem es seit Baubeginn 1692 zunächst zu einigen Komplikationen, wie einem Mangel an Materialien und Geld, gekommen war, wurde das Bauwerk erst im Jahr 1705 fertiggestellt. ", "2. Das Gebäude besteht aus zwei Voll- und drei Dachgeschossen, die auf einem starken Fundament ruhen. Da bei diesem militärischen Bauwerk der Zweck der Optik übergeordnet war, wirkt es recht schmucklos. ", "3. Das ehemalige Provianthaus fungiert heute als Museum und bildet seine Besucher in mehreren Themengebieten der Heimatkunde und Geschichte. ", "resources/figures/schwedenspeicher0.jpg"]
              ]
-             ]
 
 
 
