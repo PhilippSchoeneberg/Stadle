@@ -6,6 +6,7 @@
 		<meta name="author" content="Philipp Schöneberg">
 		<meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/png" href="resources/figures/logo.jpg">
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script src='https://unpkg.com/@turf/turf/turf.min.js'></script>
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
@@ -17,6 +18,8 @@
                 <div id="logo-name">Stadle</div>
             </div>
             <div id="map"></div>
+            <button class="backToStadeButton"></button>
+            <button class="instructionButton"></button>
             <button class="mainButton">Spielen</button>
         </div>
 
@@ -29,6 +32,16 @@
             <br><br>
             <button class="hintButton"></button>
             <button class="losGehtsButton">Los geht's!</button>
+        </div>
+
+        <div class="instructionPopup" id="popup">
+            <h1>Anleitung</h1>
+            <p id="endText"></p>
+            <p>So funktioniert's:</p>
+            <p>In jeder Runde gibt dir die Website ein Bild eines historischen Gebäudes aus Stade. Deine Aufgabe ist es den Standort des jeweiligen Gebäudes so genau wie möglich zu bestimmen.</p>
+            <p>Falls du nicht weißt welches Gebäude gemeint ist, stehen dir drei Tipps zur Verfügung. Diese geben Informationen zum Standort und zum historischen Hintergrund des Gesuchten Gebäudes.</p>      
+            <p>Aber Achtung, denn mit jedem verwendeten Tipp gibt es am Ende weniger Punkte! Und jetzt viel Spaß beim Stadle...</p>
+            <button class="okButton">Ok</button>
         </div>
 
         <div class="endPopup" id="popup">
