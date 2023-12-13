@@ -71,6 +71,7 @@ function rand (min, max) {
 }*/
 
 instructionPopup.classList.add("openPopup");
+anleitungAktiv = true;
 
 document.querySelector("#historicImg").src=places[todaysPlace][7];
 
@@ -110,9 +111,15 @@ instructionButton.addEventListener("click", () => {
 
 mainButton.addEventListener("click", () => {
     if(playButton == true){
-        playButton = false
-        mainPopup.classList.add("openPopup");
-        mainButton.classList.add("hide");
+        if(anleitungAktiv == true){
+            instructionPopup.classList.remove("openPopup");
+            anleitungAktiv = false;
+        }
+        else{
+            playButton = false
+            mainPopup.classList.add("openPopup");
+            mainButton.classList.add("hide");
+        }
     }
     else if(markerPlaced == true){
         mainButton.classList.add("hide");
