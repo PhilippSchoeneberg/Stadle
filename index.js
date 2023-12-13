@@ -31,6 +31,7 @@ const instructionPopup = document.querySelector(".instructionPopup");
 
 const endPopup = document.querySelector(".endPopup");
 const okButton = document.querySelector(".okButton");
+const ok2Button = document.querySelector(".ok2Button");
 
 var places = [
                 ["Rathaus", "9.4756788", "53.6023594", "false", "1. Das zwei Etagen hohe Bauwerk misst im Hauptgebäude eine Länge von 35 Metern und im Ostflügel eine Länge von 31 Metern. Bis zur Fertigstellung des direkt mit dem ursprünglichen Teil verbunde-nen Neubaus im Jahre 1988 war das in der Schwedenzeit errichtete Gebäude Mittelpunkt der Verwaltung Stades. ", "2. Jedoch befinden sich heute noch der Ratskeller, das Standesamt, der Ratssaal, einige Büros und der nach dem schwedischen Grafen benannte Königsmarcksaal, der als Festsaal dient, in dem alten Gebäude. ", "3. Über dem Haupteingang zur Hökerstraße ist das Wappen von Schwedens König Karl XI abgebildet und erinnert ebenfalls an die Herrschaftszeit in Stade. ", "resources/figures/rathaus0.jpg"],
@@ -64,6 +65,8 @@ function rand (min, max) {
         var todaysPlace = rand(0, places.length-1);
     }
 }*/
+
+instructionPopup.classList.add("openPopup");
 
 document.querySelector("#historicImg").src=places[todaysPlace][7];
 
@@ -151,5 +154,8 @@ hintButton.addEventListener("click", () => {
 
 okButton.addEventListener("click", () => {
     instructionPopup.classList.remove("openPopup");
+})
+
+ok2Button.addEventListener("click", () => {
     endPopup.classList.remove("openPopup");
 })

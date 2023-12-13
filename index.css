@@ -223,3 +223,16 @@ body {
     border-radius: 100px;
     transition: 150ms ease;
 }
+
+.ok2Button{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: clamp(25px, 5%, 75%);
+    width: clamp(100px, 10%, 300px);
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-radius: 100px;
+    transition: 150ms ease;
+}
