@@ -121,7 +121,7 @@ mainButton.addEventListener("click", () => {
         addMarker(places[todaysPlace][1], places[todaysPlace][2]);
         distance = Math.round(turf.distance([places[todaysPlace][1], places[todaysPlace][2]], [mylng, mylat], options));
         if(distance <= 5){
-            points = 1000/(hintCounter+1);
+            points = Math.round(1000/(hintCounter+1));
         }
         else if(distance < 500){
             points = Math.round((1000-distance*2)/(hintCounter+1));
