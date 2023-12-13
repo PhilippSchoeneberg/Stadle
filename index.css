@@ -185,6 +185,24 @@ body {
     transition: transform 0.4s;
 }
 
+.historicTextPopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    height: 40%;
+    width: 40%;
+    overflow-x: hidden;
+    overflow-y:auto;
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 50px;
+    border-radius: 50px;
+    z-index: 5;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
 .openPopup{
     transform: translate(-50%, -50%) scale(1);
     visibility: visible;
@@ -230,7 +248,33 @@ body {
     transition: 150ms ease;
 }
 
+.historicTextButton{
+    position: sticky;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: clamp(25px, 5%, 75%);
+    width: clamp(100px, 10%, 300px);
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-radius: 100px;
+    transition: 150ms ease;
+}
+
 .ok2Button{
+    position: sticky;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: clamp(25px, 5%, 75%);
+    width: clamp(100px, 10%, 300px);
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-radius: 100px;
+    transition: 150ms ease;
+}
+
+.thanksButton{
     position: sticky;
     margin-left: 50%;
     margin-right: 50%;
