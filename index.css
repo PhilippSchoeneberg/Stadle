@@ -214,7 +214,7 @@ body {
 }
 
 .okButton{
-    position: absolute;
+    position: sticky;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -227,7 +227,7 @@ body {
 }
 
 .ok2Button{
-    position: absolute;
+    position: sticky;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
