@@ -215,8 +215,8 @@ body {
 
 .okButton{
     position: sticky;
-    bottom: 5%;
-    left: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
     transform: translate(-50%, -50%) scale(1);
     height: clamp(25px, 5%, 75%);
     width: clamp(100px, 10%, 300px);
@@ -228,8 +228,8 @@ body {
 
 .ok2Button{
     position: sticky;
-    bottom: 5%;
-    left: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
     transform: translate(-50%, -50%) scale(1);
     height: clamp(25px, 5%, 75%);
     width: clamp(100px, 10%, 300px);
