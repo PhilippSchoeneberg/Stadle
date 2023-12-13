@@ -138,7 +138,7 @@ body {
     transform: translate(-50%, -50%) scale(0.1);
     height: 60%;
     width: 60%;
-    overflow:auto;
+    overflow-y:auto;
     background: var(--secondaryColor);
     color: var(--primaryColor);
     padding: 50px;
@@ -155,7 +155,7 @@ body {
     transform: translate(-50%, -50%) scale(0.1);
     height: 40%;
     width: 40%;
-    overflow:auto;
+    overflow-y:auto;
     background: var(--secondaryColor);
     color: var(--primaryColor);
     padding: 50px;
@@ -172,7 +172,7 @@ body {
     transform: translate(-50%, -50%) scale(0.1);
     height: 40%;
     width: 40%;
-    overflow:auto;
+    overflow-y:auto;
     background: var(--secondaryColor);
     color: var(--primaryColor);
     padding: 50px;
