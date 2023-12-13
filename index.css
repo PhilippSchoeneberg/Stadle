@@ -61,10 +61,10 @@ body {
     z-index: 2;
     position: absolute;
     top: 10%;
-    left: 7.5%;
+    left: 10%;
     transform: translate(-50%, -50%) scale(1);
-    height: clamp(50px, 10%, 150px);
-    width: clamp(50px, 5%, 150px);
+    height: 10vh;
+    width: 10vh;
     border-radius: 100px;
     background-image: url('resources/figures/instruction.png');
     background-size: cover;
@@ -78,10 +78,10 @@ body {
     z-index: 2;
     position: absolute;
     top: 10%;
-    right: 2.5%;
+    left: 90%;
     transform: translate(-50%, -50%) scale(1);
-    height: clamp(50px, 10%, 150px);
-    width: clamp(50px, 5%, 150px);
+    height: 10vh;
+    width: 10vh;
     border-radius: 100px;
     background-image: url('resources/figures/backToStade2.jpg');
     background-size: cover;
@@ -205,15 +205,16 @@ body {
 }
 
 .hintButton{
-    position: absolute;
-    top: 10%;
-    right: 5%;
+    position: sticky;
+    margin-left: 50%;
+    margin-right: 50%;
     transform: translate(-50%, -50%) scale(1);
-    height: clamp(50px, 10%, 150px);
-    width: clamp(50px, 5%, 150px);
+    height: 10vh;
+    width: 10vh;
     border-radius: 100px;
     background-image: url('resources/figures/tippOriginal.jpg');
     background-size: cover;
+    transition: 150ms ease;
 }
 
 .okButton{

@@ -71,7 +71,6 @@ function rand (min, max) {
 }*/
 
 instructionPopup.classList.add("openPopup");
-anleitungAktiv = true;
 
 document.querySelector("#historicImg").src=places[todaysPlace][7];
 
@@ -111,15 +110,10 @@ instructionButton.addEventListener("click", () => {
 
 mainButton.addEventListener("click", () => {
     if(playButton == true){
-        if(anleitungAktiv == true){
-            instructionPopup.classList.remove("openPopup");
-            anleitungAktiv = false;
-        }
-        else{
-            playButton = false
-            mainPopup.classList.add("openPopup");
-            mainButton.classList.add("hide");
-        }
+        instructionPopup.classList.remove("openPopup");
+        playButton = false
+        mainPopup.classList.add("openPopup");
+        mainButton.classList.add("hide");
     }
     else if(markerPlaced == true){
         mainButton.classList.add("hide");
